@@ -58,7 +58,7 @@ $('#search-form').submit(function(event) {
 });
 
 $('#form-login').submit(function(event) {
-  if ($('#loginEmail').val() == '' && $('#loginPassword').val() == '') {
+  if ($('#loginEmail').val() == '' || $('#loginPassword').val() == '') {
     alert('Please enter an email and password');
   } else {
     if ($('#loginEmail').val() == '1@2.com' && $('#loginPassword').val() == 'password') {
